@@ -1,0 +1,343 @@
+/* --- Aura CSS Animations Utility Classes --- */
+
+/* Base Animation Class */
+.aura-css {
+  animation-duration: var(--aura-css-duration-normal);
+  animation-timing-function: var(--aura-css-ease-linear);
+  animation-fill-mode: var(--aura-css-fill-none);
+  animation-direction: var(--aura-css-direction-normal);
+  animation-iteration-count: var(--aura-css-iterations-1);
+  transform-origin: var(--aura-css-origin-center);
+  /* Default transform origin */
+}
+
+/* Animation Names */
+.aura-css-fade-in {
+  animation-name: aura-css-fade-in;
+}
+
+.aura-css-fade-out {
+  animation-name: aura-css-fade-out;
+}
+
+.aura-css-slide-in-up {
+  animation-name: aura-css-slide-in-up;
+}
+
+.aura-css-slide-out-down {
+  animation-name: aura-css-slide-out-down;
+}
+
+.aura-css-slide-in-left {
+  animation-name: aura-css-slide-in-left;
+}
+
+.aura-css-slide-out-right {
+  animation-name: aura-css-slide-out-right;
+}
+
+.aura-css-zoom-in {
+  animation-name: aura-css-zoom-in;
+}
+
+.aura-css-zoom-out {
+  animation-name: aura-css-zoom-out;
+}
+
+.aura-css-rotate-in {
+  animation-name: aura-css-rotate-in;
+}
+
+.aura-css-rotate-out {
+  animation-name: aura-css-rotate-out;
+}
+
+.aura-css-bounce {
+  animation-name: aura-css-bounce;
+}
+
+.aura-css-shake-x {
+  animation-name: aura-css-shake-x;
+}
+
+.aura-css-shake-y {
+  animation-name: aura-css-shake-y;
+}
+
+.aura-css-pulse {
+  animation-name: aura-css-pulse;
+}
+
+.aura-css-spin {
+  animation-name: aura-css-spin;
+}
+
+.aura-css-text-reveal {
+  animation-name: aura-css-text-reveal;
+}
+
+.aura-css-gradient-shift {
+  animation-name: aura-css-gradient-shift;
+}
+
+.aura-css-wobble {
+  animation-name: aura-css-wobble;
+}
+
+.aura-css-flip-horizontal {
+  animation-name: aura-css-flip-horizontal;
+}
+
+.aura-css-flip-vertical {
+  animation-name: aura-css-flip-vertical;
+}
+
+.aura-css-jello {
+  animation-name: aura-css-jello;
+}
+
+.aura-css-rubber-band {
+  animation-name: aura-css-rubber-band;
+}
+
+.aura-css-light-speed-in {
+  animation-name: aura-css-light-speed-in;
+}
+
+.aura-css-hinge {
+  animation-name: aura-css-hinge;
+}
+
+.aura-css-background-noise {
+  animation-name: aura-css-background-noise;
+}
+
+
+/* Animation Durations */
+.aura-css-duration-fastest {
+  animation-duration: var(--aura-css-duration-fastest);
+}
+
+.aura-css-duration-faster {
+  animation-duration: var(--aura-css-duration-faster);
+}
+
+.aura-css-duration-fast {
+  animation-duration: var(--aura-css-duration-fast);
+}
+
+.aura-css-duration-normal {
+  animation-duration: var(--aura-css-duration-normal);
+}
+
+.aura-css-duration-slow {
+  animation-duration: var(--aura-css-duration-slow);
+}
+
+.aura-css-duration-slower {
+  animation-duration: var(--aura-css-duration-slower);
+}
+
+.aura-css-duration-slowest {
+  animation-duration: var(--aura-css-duration-slowest);
+}
+
+.aura-css-duration-extra-slow {
+  animation-duration: var(--aura-css-duration-extra-slow);
+}
+
+.aura-css-duration-long {
+  animation-duration: var(--aura-css-duration-long);
+}
+
+.aura-css-duration-extra-long {
+  animation-duration: var(--aura-css-duration-extra-long);
+}
+
+/* Animation Delays */
+.aura-css-delay-0 {
+  animation-delay: var(--aura-css-delay-0);
+}
+
+.aura-css-delay-50 {
+  animation-delay: var(--aura-css-delay-50);
+}
+
+.aura-css-delay-100 {
+  animation-delay: var(--aura-css-delay-100);
+}
+
+.aura-css-delay-150 {
+  animation-delay: var(--aura-css-delay-150);
+}
+
+.aura-css-delay-200 {
+  animation-delay: var(--aura-css-delay-200);
+}
+
+.aura-css-delay-300 {
+  animation-delay: var(--aura-css-delay-300);
+}
+
+.aura-css-delay-500 {
+  animation-delay: var(--aura-css-delay-500);
+}
+
+.aura-css-delay-700 {
+  animation-delay: var(--aura-css-delay-700);
+}
+
+.aura-css-delay-1000 {
+  animation-delay: var(--aura-css-delay-1000);
+}
+
+/* Animation Easing Functions */
+.aura-css-ease-linear {
+  animation-timing-function: var(--aura-css-ease-linear);
+}
+
+.aura-css-ease-in {
+  animation-timing-function: var(--aura-css-ease-in);
+}
+
+.aura-css-ease-out {
+  animation-timing-function: var(--aura-css-ease-out);
+}
+
+.aura-css-ease-in-out {
+  animation-timing-function: var(--aura-css-ease-in-out);
+}
+
+.aura-css-ease-bounce {
+  animation-timing-function: var(--aura-css-ease-bounce);
+}
+
+.aura-css-ease-elastic {
+  animation-timing-function: var(--aura-css-ease-elastic);
+}
+
+/* Animation Fill Modes */
+.aura-css-fill-none {
+  animation-fill-mode: var(--aura-css-fill-none);
+}
+
+.aura-css-fill-forwards {
+  animation-fill-mode: var(--aura-css-fill-forwards);
+}
+
+.aura-css-fill-backwards {
+  animation-fill-mode: var(--aura-css-fill-backwards);
+}
+
+.aura-css-fill-both {
+  animation-fill-mode: var(--aura-css-fill-both);
+}
+
+/* Animation Iteration Counts */
+.aura-css-iterations-1 {
+  animation-iteration-count: var(--aura-css-iterations-1);
+}
+
+.aura-css-iterations-2 {
+  animation-iteration-count: var(--aura-css-iterations-2);
+}
+
+.aura-css-iterations-3 {
+  animation-iteration-count: var(--aura-css-iterations-3);
+}
+
+.aura-css-iterations-infinite {
+  animation-iteration-count: var(--aura-css-iterations-infinite);
+}
+
+/* Animation Directions */
+.aura-css-direction-normal {
+  animation-direction: var(--aura-css-direction-normal);
+}
+
+.aura-css-direction-reverse {
+  animation-direction: var(--aura-css-direction-reverse);
+}
+
+.aura-css-direction-alternate {
+  animation-direction: var(--aura-css-direction-alternate);
+}
+
+.aura-css-direction-alternate-reverse {
+  animation-direction: var(--aura-css-direction-alternate-reverse);
+}
+
+/* Animation Play State */
+.aura-css-play-running {
+  animation-play-state: running;
+}
+
+.aura-css-play-paused {
+  animation-play-state: paused;
+}
+
+/* Transform Origins */
+.aura-css-origin-center {
+  transform-origin: var(--aura-css-origin-center);
+}
+
+.aura-css-origin-top {
+  transform-origin: var(--aura-css-origin-top);
+}
+
+.aura-css-origin-bottom {
+  transform-origin: var(--aura-css-origin-bottom);
+}
+
+.aura-css-origin-left {
+  transform-origin: var(--aura-css-origin-left);
+}
+
+.aura-css-origin-right {
+  transform-origin: var(--aura-css-origin-right);
+}
+
+.aura-css-origin-top-left {
+  transform-origin: var(--aura-css-origin-top-left);
+}
+
+.aura-css-origin-top-right {
+  transform-origin: var(--aura-css-origin-top-right);
+}
+
+.aura-css-origin-bottom-left {
+  transform-origin: var(--aura-css-origin-bottom-left);
+}
+
+.aura-css-origin-bottom-right {
+  transform-origin: var(--aura-css-origin-bottom-right);
+}
+
+
+/* --- Utility Modifiers for specific effects --- */
+
+/* For text-reveal, ensures text is hidden initially and overflow is managed */
+.aura-css-text-reveal-clip {
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid;
+  /* Optional: typing cursor */
+}
+
+/* For background-noise, ensures background covers element */
+.aura-css-background-noise-cover {
+  background-size: 400px 400px;
+  /* Adjust as needed */
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  /* Fallback for background-image, or use a simpler pattern */
+}
+
+/* --- Accessibility Utilities --- */
+/* Apply this to elements that should have animations reduced/disabled for users
+   who prefer reduced motion. */
+@media (prefers-reduced-motion: reduce) {
+  .aura-css-reduce-motion {
+    animation: none !important;
+    transition: none !important;
+  }
+}

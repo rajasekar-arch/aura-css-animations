@@ -1,0 +1,80 @@
+/* src/_presets.css */
+
+/* --- Aura CSS Animations Pre-composed Animation Presets --- */
+
+/* Button Hover Pulse */
+.aura-css-button-hover-pulse:hover {
+  animation: aura-css-pulse var(--aura-css-duration-slow) var(--aura-css-ease-in-out) forwards;
+}
+
+/* Card Entrance (Slide Up & Fade In) */
+.aura-css-card-entrance {
+  animation:
+    aura-css-slide-in-up var(--aura-css-duration-slow) var(--aura-css-ease-out) var(--aura-css-delay-100) forwards,
+    aura-css-fade-in var(--aura-css-duration-slow) var(--aura-css-ease-out) var(--aura-css-delay-100) forwards;
+  opacity: 0;
+  /* Ensure it's hidden before animation starts */
+}
+
+/* Text Typing Effect */
+.aura-css-text-typing {
+  display: inline-block;
+  /* Required for width animation */
+  animation:
+    aura-css-text-reveal var(--aura-css-duration-long) steps(30, end) forwards,
+    aura-css-fade-in var(--aura-css-duration-fast) forwards;
+  /* Fade in as it types */
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid currentColor;
+  /* Typing cursor */
+  opacity: 0;
+  /* Hidden before animation */
+}
+
+/* Remove cursor after animation */
+.aura-css-text-typing.aura-css-fill-forwards {
+  border-right: none;
+}
+
+/* Background Gradient Loop */
+.aura-css-background-gradient-loop {
+  background: linear-gradient(270deg, #6366F1, #0EA5E9, #22C55E);
+  /* Example gradient */
+  background-size: 200% 200%;
+  animation: aura-css-gradient-shift var(--aura-css-duration-long) var(--aura-css-ease-linear) infinite;
+}
+
+/* Spin on Load (e.g., for a logo) */
+.aura-css-spin-on-load {
+  animation: aura-css-spin var(--aura-css-duration-slowest) var(--aura-css-ease-linear) forwards;
+}
+
+/* Wobble on Hover */
+.aura-css-wobble-hover:hover {
+  animation: aura-css-wobble var(--aura-css-duration-normal) var(--aura-css-ease-in-out);
+}
+
+/* Pop-in Effect */
+.aura-css-pop-in {
+  animation: aura-css-zoom-in var(--aura-css-duration-fast) var(--aura-css-ease-out) forwards;
+  opacity: 0;
+}
+
+/* Shake on Error (e.g., for form input) */
+.aura-css-shake-error {
+  animation: aura-css-shake-x var(--aura-css-duration-normal) var(--aura-css-ease-in-out) 1;
+}
+
+/* Elastic Bounce on Click (requires JS to add/remove class) */
+.aura-css-elastic-bounce {
+  animation: aura-css-bounce var(--aura-css-duration-slow) var(--aura-css-ease-elastic) forwards;
+}
+
+/* --- Accessibility Presets --- */
+/* Apply this class to elements where you want to completely disable animation
+   if the user has prefers-reduced-motion enabled. */
+.aura-css-disable-on-reduced-motion {
+  /* This is handled by the .aura-css-reduce-motion utility in _utilities.css
+     which sets animation: none !important; */
+}

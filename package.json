@@ -1,0 +1,42 @@
+{
+  "name": "aura-css-animations",
+  "version": "1.0.0",
+  "description": "is a lightweight, pure CSS NPM package designed to bring dynamic, vibrant, and advanced animations to your web projects without any JavaScript dependencies. It offers granular control over animation properties through a utility-first approach and provides ready-to-use presets for common effects.",
+  "main": "dist/index.css",
+  "style": "dist/index.css",
+  "scripts": {
+    "build": "postcss src/index.css --dir dist",
+    "watch": "postcss src/index.css --dir dist --watch",
+    "clean": "rm -rf dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rajasekar-arch/aura-css-animations.git"
+  },
+  "keywords": [
+    "css",
+    "animations",
+    "keyframes",
+    "frontend",
+    "web animations",
+    "utility-first css",
+    "dynamic css",
+    "no-js",
+    "performance",
+    "vibrant",
+    "advanced animations"
+  ],
+  "author": "RAJASEKAR E C <rajasekar_e_c@outlook.com>",
+  "license": "MIT",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/rajasekar-arch/aura-css-animations/issues"
+  },
+  "homepage": "https://github.com/rajasekar-arch/aura-css-animations#readme",
+  "devDependencies": {
+    "postcss": "^8.4.38",
+    "postcss-cli": "^11.0.0",
+    "autoprefixer": "^10.4.19",
+    "cssnano": "^7.0.3"
+  }
+}

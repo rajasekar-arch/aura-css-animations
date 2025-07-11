@@ -1,0 +1,10 @@
+/* --- Aura CSS Animations Core CSS Animations --- */
+
+/* Import all partials */
+@import './_variables.css';
+@import './_keyframes.css';
+@import './_utilities.css';
+@import './_presets.css';
+
+/* Add any global resets or base styles here if necessary,
+   though typically a CSS framework would not include a full reset. */

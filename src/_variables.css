@@ -1,0 +1,111 @@
+/* --- Aura CSS Animations Core Variables --- */
+
+/* Animation Durations */
+:root {
+  --aura-css-duration-fastest: 50ms;
+  --aura-css-duration-faster: 100ms;
+  --aura-css-duration-fast: 200ms;
+  --aura-css-duration-normal: 300ms;
+  --aura-css-duration-slow: 500ms;
+  --aura-css-duration-slower: 700ms;
+  --aura-css-duration-slowest: 1000ms;
+  --aura-css-duration-extra-slow: 1500ms;
+  --aura-css-duration-long: 2000ms;
+  --aura-css-duration-extra-long: 3000ms;
+}
+
+/* Animation Delays */
+:root {
+  --aura-css-delay-0: 0s;
+  --aura-css-delay-50: 50ms;
+  --aura-css-delay-100: 100ms;
+  --aura-css-delay-150: 150ms;
+  --aura-css-delay-200: 200ms;
+  --aura-css-delay-300: 300ms;
+  --aura-css-delay-500: 500ms;
+  --aura-css-delay-700: 700ms;
+  --aura-css-delay-1000: 1000ms;
+}
+
+/* Animation Easing Functions */
+:root {
+  --aura-css-ease-linear: linear;
+  --aura-css-ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --aura-css-ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --aura-css-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --aura-css-ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  /* Custom bounce effect */
+  --aura-css-ease-elastic: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  /* Custom elastic effect */
+}
+
+/* Animation Fill Modes */
+:root {
+  --aura-css-fill-none: none;
+  --aura-css-fill-forwards: forwards;
+  --aura-css-fill-backwards: backwards;
+  --aura-css-fill-both: both;
+}
+
+/* Animation Iteration Counts */
+:root {
+  --aura-css-iterations-1: 1;
+  --aura-css-iterations-2: 2;
+  --aura-css-iterations-3: 3;
+  --aura-css-iterations-infinite: infinite;
+}
+
+/* Animation Directions */
+:root {
+  --aura-css-direction-normal: normal;
+  --aura-css-direction-reverse: reverse;
+  --aura-css-direction-alternate: alternate;
+  --aura-css-direction-alternate-reverse: alternate-reverse;
+}
+
+/* Transform Origins (for scaling/rotating) */
+:root {
+  --aura-css-origin-center: center;
+  --aura-css-origin-top: top;
+  --aura-css-origin-bottom: bottom;
+  --aura-css-origin-left: left;
+  --aura-css-origin-right: right;
+  --aura-css-origin-top-left: top left;
+  --aura-css-origin-top-right: top right;
+  --aura-css-origin-bottom-left: bottom left;
+  --aura-css-origin-bottom-right: bottom right;
+}
+
+/* --- Accessibility: Reduced Motion --- */
+/* Users who prefer reduced motion will see animations simplified or removed */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --aura-css-duration-fastest: 1ms;
+    --aura-css-duration-faster: 1ms;
+    --aura-css-duration-fast: 1ms;
+    --aura-css-duration-normal: 1ms;
+    --aura-css-duration-slow: 1ms;
+    --aura-css-duration-slower: 1ms;
+    --aura-css-duration-slowest: 1ms;
+    --aura-css-duration-extra-slow: 1ms;
+    --aura-css-duration-long: 1ms;
+    --aura-css-duration-extra-long: 1ms;
+    --aura-css-delay-0: 0s;
+    /* No change for 0s delay */
+    --aura-css-delay-50: 0s;
+    --aura-css-delay-100: 0s;
+    --aura-css-delay-150: 0s;
+    --aura-css-delay-200: 0s;
+    --aura-css-delay-300: 0s;
+    --aura-css-delay-500: 0s;
+    --aura-css-delay-700: 0s;
+    --aura-css-delay-1000: 0s;
+    /* Other properties like easing, fill-mode, direction can be adjusted or animations removed entirely via utilities */
+  }
+
+  /* Example: A utility to disable animations for reduced motion */
+  .aura-css-motion-safe:not(:hover) {
+    animation: none !important;
+    transition: none !important;
+  }
+}
